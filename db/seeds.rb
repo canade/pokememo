@@ -5,3 +5,15 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+Pokememo.create(
+  name: "a",
+  item: "b",
+  ability: "",
+)
+
+Pokememo.create(
+  name: "a",
+  item: "b",
+  ability: "",
+)
