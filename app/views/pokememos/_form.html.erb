@@ -1,0 +1,73 @@
+<%= form_for(@pokememo) do |f| %>
+  <% if @pokememo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@pokememo.errors.count, "error") %> prohibited this pokememo from being saved:</h2>
+
+      <ul>
+      <% @pokememo.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :item %><br>
+    <%= f.text_field :item %>
+  </div>
+  <div class="field">
+    <%= f.label :ability %><br>
+    <%= f.text_field :ability %>
+  </div>
+  <div class="field">
+    <%= f.label :move1 %><br>
+    <%= f.text_field :move1 %>
+  </div>
+  <div class="field">
+    <%= f.label :move2 %><br>
+    <%= f.text_field :move2 %>
+  </div>
+  <div class="field">
+    <%= f.label :move3 %><br>
+    <%= f.text_field :move3 %>
+  </div>
+  <div class="field">
+    <%= f.label :move4 %><br>
+    <%= f.text_field :move4 %>
+  </div>
+  <div class="field">
+    <%= f.label :H %><br>
+    <%= f.number_field :H %>
+  </div>
+  <div class="field">
+    <%= f.label :A %><br>
+    <%= f.number_field :A %>
+  </div>
+  <div class="field">
+    <%= f.label :B %><br>
+    <%= f.number_field :B %>
+  </div>
+  <div class="field">
+    <%= f.label :C %><br>
+    <%= f.number_field :C %>
+  </div>
+  <div class="field">
+    <%= f.label :D %><br>
+    <%= f.number_field :D %>
+  </div>
+  <div class="field">
+    <%= f.label :S %><br>
+    <%= f.number_field :S %>
+  </div>
+  <div class="field">
+    <%= f.label :nature %><br>
+    <%= f.text_field :nature %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

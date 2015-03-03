@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  item: MyString
+  ability: MyString
+  move1: MyString
+  move2: MyString
+  move3: MyString
+  move4: MyString
+  staH: 1
+  staA: 1
+  staB: 1
+  staC: 1
+  staD: 1
+  staS: 1
+  nature: MyString
+
+two:
+  name: MyString
+  item: MyString
+  ability: MyString
+  move1: MyString
+  move2: MyString
+  move3: MyString
+  move4: MyString
+  staH: 1
+  staA: 1
+  staB: 1
+  staC: 1
+  staD: 1
+  staS: 1
+  nature: MyString

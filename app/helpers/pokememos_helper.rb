@@ -1,0 +1,2 @@
+module PokememosHelper
+end

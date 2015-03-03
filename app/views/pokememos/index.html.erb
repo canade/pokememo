@@ -1,0 +1,66 @@
+<div class="title">
+  <h1>Listing pokememos</h1>
+</div>
+
+<% @pokememos.each do |pokememo| %>
+
+<div class="pokememo">
+  <div class="pokememo-detail">
+    <div class="name">
+      <h1>Name</h1>
+      <div><%= pokememo.name %></div>
+    </div>
+    <div class="item">    
+      <h1>Item</h1>
+      <div><%= pokememo.item %></div>
+      <div class="ability">
+       <h1>Ability</h1>
+       <div><%= pokememo.ability %></div>
+     </div>
+   </div>
+   <div class="move">
+    <h1>Move1</h1>
+    <div><%= pokememo.move1 %></div>
+    <h1>Move2</h1>
+    <div><%= pokememo.move2 %></div>
+    <h1>Move3</h1>
+    <div><%= pokememo.move3 %></div>
+    <h1>Move4</h1>
+    <div><%= pokememo.move4 %></div>
+  </div> 
+  <div class="stats">   
+    <h1>H</h1>
+    <div><%= pokememo.H %></div>
+    <h1>A</h1>
+    <div><%= pokememo.A %></div>
+    <h1>B</h1>
+    <div><%= pokememo.B %></div>
+    <h1>C</h1>
+    <div><%= pokememo.C %></div>
+    <h1>D</h1>
+    <div><%= pokememo.D %></div>
+    <h1>S</h1>
+    <div><%= pokememo.S %></div>
+    <h1>Nature</h1>
+    <div><%= pokememo.nature %></div>
+  </div>
+</div>
+
+<div>
+  <p><%= link_to 'Show', pokememo %></p>
+  <p><%= link_to 'Edit', edit_pokememo_path(pokememo) %></p>
+  <p><%= link_to 'Destroy', pokememo, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+</div>
+
+</div> 
+
+<% end %>
+
+<br>
+
+<div>
+  <%= link_to 'New Pokememo', new_pokememo_path %>
+</div>
+
+
+
