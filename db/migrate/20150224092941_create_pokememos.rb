@@ -8,12 +8,12 @@ class CreatePokememos < ActiveRecord::Migration
       t.string :move2
       t.string :move3
       t.string :move4
-      t.integer :H
-      t.integer :A
-      t.integer :B
-      t.integer :C
-      t.integer :D
-      t.integer :S
+      t.integer :staH
+      t.integer :staA
+      t.integer :staB
+      t.integer :staC
+      t.integer :staD
+      t.integer :staS
       t.string :nature
 
       t.timestamps
